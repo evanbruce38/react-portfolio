@@ -130,7 +130,7 @@ main {
 .big-box-1 {
   width: 100%;
   height: 400px;
-  background-image: url("");
+  /* background-image: url(""); */
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -141,7 +141,7 @@ main {
 .big-box-2 {
   width: 100%;
   height: 400px;
-  background-image: url("");
+  /* background-image: url(""); */
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -199,21 +199,21 @@ main {
   height: 100%;
 }
 
-#half-box1 {
-  background-image: url("");
+/* #half-box1 {
+  background-image: url(""); 
 }
 
 #half-box2 {
-  background-image: url("");
+  background-image: url(""); 
 }
 
 #half-box3 {
-  background-image: url("");
+   background-image: url(""); 
 }
 
 #half-box4 {
-  background-image: url("");
-}
+  background-image: url(""); 
+} */
 
 .column {
   height: 75%;
