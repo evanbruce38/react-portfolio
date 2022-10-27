@@ -1,5 +1,5 @@
 import './App.css';
-import About from '/.Components/About'
+import About from './Components/About'
 import Footer from './Components/Footer';
 import Project from './Components/Project';
 import Header from './Components/Header';
