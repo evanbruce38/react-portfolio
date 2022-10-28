@@ -14,7 +14,7 @@
 
   ## Screenshot of Application
 
-  ![screenshot](insert link here)
+  ![screenshot](./src/assets/Screenshot_20221027_104144.png)
 
   ## Link to Deployed Application
 
