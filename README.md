@@ -6,7 +6,7 @@
   * This project is a portfolio I have created using react as part of the University of Miami coding bootcamp. Using this project as a way to show my skills with react, as well as html, css, and javascript has been a great experience. Thanks for taking the time to check out my portfolio, please dont hesitate to reach out with any follow up questions.
 
   ## Table of Contents
-  * [Screenshot]{#screenshot-of-application}
+  * [Screenshot](#screenshot-of-application)
   * [Link](#link-to-deployed-application)
   * [Usage](#usage)
   * [License Info](#license-info)
