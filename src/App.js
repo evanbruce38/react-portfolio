@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import About from './components/About'
 import Footer from './components/Footer';
-import Project from './components/Project';
 import Header from './components/Header';
+import Portfolio from './components/Portfolio';
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
     if (currentPage === "About") {
     return <About />
   } else {
-    return <Project />
+    return <Portfolio />
   }
 }
 

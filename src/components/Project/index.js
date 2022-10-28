@@ -1,71 +1,43 @@
 import React from 'react';
-import Project from '../Project';
-import './style.css';
 
-function Portfolio(props) {
+function Project({work}) {
 
-    const workArr = [
-        {
-            url: 'https://dev-connect-portfolio-sharing.herokuapp.com/',
-            title: 'Dev Connect, social media for developers',
-            github: 'https://github.com/evanbruce38/dev-connect-portfolio-sharing',
-            class: 'big-box-1',
-            id: null
-        },
-        {
-            url: 'https://evanbruce38.github.io/Find-a-K-9/',
-            title: 'Find a K-9',
-            github: 'https://github.com/evanbruce38/Find-a-K-9',
-            class: 'big-box-2',
-            id: null
-        },
-        {
-            url: 'https://evanbruce38.github.io/Challenge-6-Weather-Dashboard/',
-            title: 'Weather Dashboard',
-            github: 'https://github.com/evanbruce38/Challenge-6-Weather-Dashboard',
-            class: 'half-box',
-            id: "half-box1"
-        },
-        {
-            url: 'https://immense-wave-00583.herokuapp.com/',
-            title: 'Note Taker Applicaiton',
-            github: 'https://github.com/evanbruce38/Note-Taker',
-            class: 'half-box',
-            id: 'half-box2'
-        },
-        {
-            url: 'https://evanbruce38.github.io/Challenge-3-Password-Generator/',
-            title: 'Password Generator application',
-            github: 'https://github.com/evanbruce38/Challenge-3-Password-Generator',
-            class: 'half-box',
-            id: 'half-box3'
-        },
-        {
-            url: 'https://boiling-hollows-44831.herokuapp.com/',
-            title: 'Tech-blog application',
-            github: 'https://github.com/evanbruce38/Tech-Blog',
-            class: 'half-box',
-            id: 'half-box4'
-        }
-    ];
+    function handleClick(link) {
+        window.open(link, '_blank');
+    }
+
+    function renderWork () {
+        if(work.id == null) {
+            return (
+                <div id="work-main-img">
+                    <div class={work.class}>
+                        <div class="pic-label">
+                            <button className="btn btn-success btn-lg mb-3 mx-3" onClick={() => handleClick(work.url)}>{work.title}</button>
+                            <button className="btn btn-success btn-lg mb-3" onClick={() => handleClick(work.github)}>GitHub Repo</button>
+                        </div>
+                    </div>
+                </div>
+            )
+        } else {
+            return  (
+            <div className="click-container">
+                <div class={work.class} id={work.id}>
+                    <div class="pic-label">
+                        <button className="btn btn-success mx-3" onClick={() => handleClick(work.url)}>{work.title}</button>
+                        <button className="btn btn-success" onClick={() => handleClick(work.github)}>GitHub Repo</button>
+                    </div>
+                </div>
+            </div>
+            )}
+    }
 
     return (
         <>
-        <section className='d-flex justify-content-center' id="header-img-partial"></section>
-                <h2 className='d-flex justify-content-center' id="work-title">Portfolio</h2>
-            <section id="work">
-                <div class="column"></div>
-                <div id="work-imgs-container" class="main-section-content">
-                    {
-                        workArr.map(work => {
-                            return <Project work={work}/>
-                        })
-                    }
-                </div>
-                    
-            </section>
+            {renderWork()}
         </>
+
+       
     );
 }
 
-export default Portfolio;
+export default Project;

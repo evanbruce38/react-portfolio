@@ -1,9 +1,8 @@
 :root {
   --first-color: #0d0630;
-  --second-color: #18314f;
+  --second-color: #e6f9af;
   --third-color: #384e77;
   --fourth-color: #8bbeb2;
-  --fifth-color: #e6f9af;
 }
 
 * {
@@ -18,7 +17,7 @@ html {
 }
 
 p {
-  color: var(--fifth-color)
+  color: var(--second-color)
 }
 
 header {
@@ -48,7 +47,7 @@ nav a:hover {
 }
 
 header h1:hover {
-  color: var(--fifth-color)
+  color: var(--second-color)
 }
 
 #title-name {
@@ -130,7 +129,7 @@ main {
 .big-box-1 {
   width: 100%;
   height: 400px;
-  /* background-image: url(""); */
+  background-image: url('./assets/dev\ connect.png'); 
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -141,7 +140,7 @@ main {
 .big-box-2 {
   width: 100%;
   height: 400px;
-  /* background-image: url(""); */
+  background-image: url('./assets/find-a-k9.png');
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -155,7 +154,7 @@ main {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 32px;
-  text-decoration-color: var(--fifth-color);
+  text-decoration-color: var(--second-color);
 }
 
 .pic-label button {
@@ -199,21 +198,21 @@ main {
   height: 100%;
 }
 
-/* #half-box1 {
-  background-image: url(""); 
+#half-box1 {
+  background-image: url("./assets/Weather-dashboard.png"); 
 }
 
 #half-box2 {
-  background-image: url(""); 
+  background-image: url("./assets/Note-taker.png"); 
 }
 
 #half-box3 {
-   background-image: url(""); 
+   background-image: url("./assets/password-gen.png"); 
 }
 
 #half-box4 {
-  background-image: url(""); 
-} */
+  background-image: url("./assets/tech-blog.png"); 
+} 
 
 .column {
   height: 75%;
@@ -224,7 +223,7 @@ main {
 .footer-basic {
   padding:40px 0;
   background-color: var(--second-color);
-  color: var(--fifth-color)
+  color: var(--second-color)
 }
 
 .footer-basic ul {
@@ -266,7 +265,7 @@ main {
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:1px solid var(--fifth-color);
+  border:1px solid var(--second-color);
   margin:0 8px;
   color:inherit;
   opacity:0.75;
