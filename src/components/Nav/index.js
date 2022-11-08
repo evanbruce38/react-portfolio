@@ -10,6 +10,9 @@ function Nav({ currentPage, setCurrentPage }) {
             <a className={currentPage == 'Project' ? 'active-page' : 'inactive-page'} href="#"onClick={() => {
                 setCurrentPage('Project');
             }}>Projects</a>
+              <a className={currentPage == 'Resume' ? 'active-page' : 'inactive-page'} href="#"onClick={() => {
+                setCurrentPage('Resume')
+            }}>Resume</a>
         </nav>
     );
 }
