@@ -4,6 +4,7 @@ import About from './components/About'
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
+import Resume from './Components/Resume';
 
 function App() {
 
@@ -12,8 +13,10 @@ function App() {
   function renderPage () {
     if (currentPage === "About") {
     return <About />
-  } else {
+  } else if (currentPage === 'Portfolio') {
     return <Portfolio />
+  } else if (currentPage === 'Resume') {
+    return <Resume />
   }
 }
 
