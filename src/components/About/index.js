@@ -7,7 +7,7 @@ function About(props) {
         <>
             <section id="header-img">
                 <h2>
-                    Welcome to my page!
+                    Welcome to my portfolio!
                 </h2>
             </section>
 
