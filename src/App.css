@@ -1,10 +1,3 @@
-:root {
-  --first-color: #0d0630;
-  --second-color: #e6f9af;
-  --third-color: #384e77;
-  --fourth-color: #8bbeb2;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +10,11 @@ html {
 }
 
 p {
-  color: var(--second-color)
+  color: rgb(54, 161, 60);
 }
 
 header {
-  background-color: var(--first-color);
+  background-color: darkslategrey;
   display: flex;
   justify-content: space-between;
 }
@@ -29,7 +22,7 @@ header {
 header nav {
   display: flex;
   /* width: 500px; */
-  background-color: var(--first-color);
+  background-color: darkslategrey;
   justify-content: space-around;
   align-items: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -42,12 +35,12 @@ header nav a {
 }
 
 nav a:hover {
-  color: var(--fourth-color);
+  color: white;
   text-decoration: none;
 }
 
 header h1:hover {
-  color: var(--second-color)
+  color: gold
 }
 
 #title-name {
@@ -58,17 +51,49 @@ header h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--fourth-color);
+  color: rgb(211, 203, 192);
   text-decoration: none;
 }
 
 #title-name:hover {
-  color: var(--fourth-color);
+  color: white;
   text-decoration: none;
 }
 
 main {
-  background-color: var(--first-color)
+  background-color: darkslategrey;
+}
+
+#header-img {
+  width: 100%;
+  height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#header-img-partial {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#header-img h2 {
+  margin-right: 45px;
+  color: rgb(236, 235, 235);
+  background-color: rgba(47, 79, 79, 0.733);
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 #about, #contact {
@@ -85,11 +110,11 @@ main {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: flex;
   justify-content: center;
-  color: var(--fourth-color)
+  color: rgb(211, 203, 192)
 }
 
 .about-p {
-  color: var(--fourth-color);
+  color: whitesmoke;
   line-height: 1.5;
   font-family: sans-serif;
   font-size: 28px;
@@ -107,7 +132,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--first-color);
+  background-color: darkslategray;
   padding: 40px;
 }
 
@@ -129,11 +154,10 @@ main {
 .big-box-1 {
   width: 100%;
   height: 400px;
-  background-image: url('./assets/dev\ connect.png'); 
-  background-size: cover;
+  background-image: url('./assets/dev-connect.png');
   display: flex;
   align-items: flex-end;
-  border: 8px solid var(--third-color);
+  border: 8px solid burlywood;
   margin-bottom: 50px;
 }
 
@@ -144,20 +168,25 @@ main {
   background-size: cover;
   display: flex;
   align-items: flex-end;
-  border: 8px solid var(--third-color);
+  border: 8px solid burlywood;
 }
 
 .pic-label {
   height: 50px;
+  /* background-color: darkslateblue; */
   display: flex;
   align-content: space-around;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 32px;
-  text-decoration-color: var(--second-color);
+  text-decoration-color: lime;
 }
 
 .pic-label button {
+  /* color: orange;
+  background-color: green;
+  margin: 50px;
+  font-size: 20px; */
   margin-top: 50px;
 }
 
@@ -166,7 +195,7 @@ main {
   height: 228px;
   margin-top: 50px;
   background-size: cover;
-  border: 8px solid var(--third-color);
+  border: 8px solid burlywood;
   display: flex;
   align-items: flex-end;
 }
@@ -179,14 +208,14 @@ main {
 .box-title {
   position: relative;
   z-index: 10;
-  background-color: var(--second-color);
+  background-color: black;
   display: inline-block;
   padding: 15px;
   top: 40%;
 }
 
 .box-title-text {
-  color: var(--fourth-color);
+  color: white;
   font-size: 28px;
   font-weight: 600;
   font-style: italic;
@@ -199,31 +228,31 @@ main {
 }
 
 #half-box1 {
-  background-image: url("./assets/Weather-dashboard.png"); 
+  background-image: url('./assets/Weather-dashboard.png');
 }
 
 #half-box2 {
-  background-image: url("./assets/Note-taker.png"); 
+  background-image: url('./assets/Note-taker.png');
 }
 
 #half-box3 {
-   background-image: url("./assets/password-gen.png"); 
+  background-image: url('./assets/password-gen.png');
 }
 
 #half-box4 {
-  background-image: url("./assets/tech-blog.png"); 
-} 
+  background-image: url('./assets/tech-blog.png');
+}
 
 .column {
   height: 75%;
-  background-color: var (--second-color);
+  background-color: rgb(27, 44, 44);
   width: 8px;
 }
 
 .footer-basic {
   padding:40px 0;
-  background-color: var(--second-color);
-  color: var(--second-color)
+  background-color: rgb(27, 44, 44);
+  color:#000000;
 }
 
 .footer-basic ul {
@@ -233,7 +262,7 @@ main {
   font-size:18px;
   line-height:1.6;
   margin-bottom:0;
-  color: var(--fourth-color)
+  color: white;
 }
 
 .footer-basic li {
@@ -248,13 +277,13 @@ main {
 
 .footer-basic ul a:hover {
   opacity:1;
-  color: var(--third-color)
+  color: rgb(112, 96, 215);
 }
 
 .footer-basic .social {
   text-align:center;
   padding-bottom:25px;
-  color: var(--fourth-color)
+  color: white
 }
 
 .footer-basic .social > a {
@@ -265,7 +294,7 @@ main {
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:1px solid var(--second-color);
+  border:1px solid #ccc;
   margin:0 8px;
   color:inherit;
   opacity:0.75;
@@ -273,29 +302,34 @@ main {
 
 .footer-basic .social > a:hover {
   opacity:0.9;
-  color: var(--third-color);
+  color: rgb(112, 96, 215);
 }
 
 .footer-basic .copyright {
   margin-top:15px;
   text-align:center;
   font-size:13px;
-  color: var(--second-color);
+  color:burlywood;
   margin-bottom:0;
 }
 
 .active-page {
-  color: var(--fourth-color);
+  color: whitesmoke;
 }
 
 .inactive-page {
-  color: var(--second-color);
+  color: rgb(211, 203, 192);
 }
 
 .profs {
   font-size: 55px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: var(--fourth-color);
+  color: rgb(211, 203, 192);
+}
+
+.resume-container {
+  background-color: darkslategray;
+  color: white;
 }
 
 .ul-container {
