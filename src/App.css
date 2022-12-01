@@ -10,11 +10,11 @@ html {
 }
 
 p {
-  color: rgb(54, 161, 60);
+  color: burlywood;
 }
 
 header {
-  background-color: midnightblue;
+  background-color: rgb(5, 5, 44);
   display: flex;
   justify-content: space-between;
 }
@@ -22,7 +22,7 @@ header {
 header nav {
   display: flex;
   /* width: 500px; */
-  background-color: midnightblue;
+  background-color: rgb(5, 5, 44);
   justify-content: space-around;
   align-items: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 header h1:hover {
-  color: gold
+  color: burlywood;
 }
 
 #title-name {
@@ -61,7 +61,7 @@ header h1:hover {
 }
 
 main {
-  background-color: midnightblue;
+  background-color: rgb(5, 5, 44);
 }
 
 #header-img {
@@ -132,7 +132,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: midnightblue;
+  background-color: rgb(5, 5, 44);
   padding: 40px;
 }
 
@@ -245,13 +245,13 @@ main {
 
 .column {
   height: 75%;
-  background-color: rgb(27, 44, 44);
+  background-color: burlywood;
   width: 8px;
 }
 
 .footer-basic {
   padding:40px 0;
-  background-color: rgb(27, 44, 44);
+  background-color: rgb(5, 5, 20);
   color:#000000;
 }
 
@@ -277,7 +277,7 @@ main {
 
 .footer-basic ul a:hover {
   opacity:1;
-  color: rgb(112, 96, 215);
+  color: burlywood;
 }
 
 .footer-basic .social {
@@ -302,7 +302,7 @@ main {
 
 .footer-basic .social > a:hover {
   opacity:0.9;
-  color: rgb(112, 96, 215);
+  color: burlywood;
 }
 
 .footer-basic .copyright {
@@ -328,7 +328,7 @@ main {
 }
 
 .resume-container {
-  background-color: midnightblue;
+  background-color: rgb(5, 5, 44);
   color: white;
 }
 
