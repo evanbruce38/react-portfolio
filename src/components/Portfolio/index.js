@@ -20,7 +20,7 @@ function Portfolio(props) {
             id: null
         },
         {
-            url: 'https://evanbruce38.github.io/Challenge-6-Weather-Dashboard/',
+            url: 'https://evanbruce38.github.io/Weather-Dashboard/',
             title: 'Weather Dashboard',
             github: 'https://github.com/evanbruce38/Challenge-6-Weather-Dashboard',
             class: 'half-box',
@@ -34,7 +34,7 @@ function Portfolio(props) {
             id: 'half-box2'
         },
         {
-            url: 'https://evanbruce38.github.io/Challenge-3-Password-Generator/',
+            url: 'https://evanbruce38.github.io/Password-Generator/',
             title: 'Password Generator application',
             github: 'https://github.com/evanbruce38/Challenge-3-Password-Generator',
             class: 'half-box',
